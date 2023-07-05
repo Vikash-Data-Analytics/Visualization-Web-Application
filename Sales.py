@@ -1,7 +1,5 @@
 import streamlit as st
 import pandas as pd
-import plotly.express as px
-
 st.set_option('deprecation.showfileUploaderEncoding', False)
 st.set_page_config(
     page_title="Venturesathi | Data Analytics Solutions",

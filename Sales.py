@@ -10,14 +10,14 @@ st.set_page_config(
     # layout = 'wide',
 )
 
-# hide_streamlit_style = """
-#     <style>
-#         #MainMenu {visibility: hidden;}
-#         footer {visibility: hidden;}
-#         header {visibility: hidden;}
-#         </style>
-#     """
-# st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+hide_streamlit_style = """
+    <style>
+        #MainMenu {visibility: hidden;}
+        footer {visibility: hidden;}
+        header {visibility: hidden;}
+        </style>
+    """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 USERNAME = 'venture'
 PASSWORD = 'sathi@07'
@@ -48,7 +48,7 @@ def render_login_form():
 def render_authorized_content():
     st.markdown("<h3 style='text-align: center;'>Manufacturer's Sales Dashboard</h3>", unsafe_allow_html=True)
 
-    chart_data = pd.read_csv(r"C:\Users\VikashKumarChaudhary\Downloads\Sales.csv")
+    chart_data = pd.read_csv(r"Sales.csv")
     
     with open("Filter.css")as f:
      st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html = True)

@@ -1,23 +1,35 @@
 import streamlit as st
 import pandas as pd
+import yfinance as yf
+import plotly.express as px
+
 st.set_option('deprecation.showfileUploaderEncoding', False)
 st.set_page_config(
     page_title="Venturesathi | Data Analytics Solutions",
     page_icon="Logo.jpg",
     # layout = 'wide',
 )
+logo_image = "Logo.png"
 
-hide_streamlit_style = """
-    <style>
-        #MainMenu {visibility: hidden;}
-        footer {visibility: hidden;}
-        header {visibility: hidden;}
-        </style>
-    """
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+col1, col2 = st.columns([1, 3])
 
-USERNAME = 'venture'
-PASSWORD = 'sathi@07'
+with col1:
+    st.image(logo_image, width=140)
+
+with col2:
+    st.markdown("<h4>Driving Growth through Data Analytics</h4>", unsafe_allow_html=True)
+
+# hide_streamlit_style = """
+#     <style>
+#         #MainMenu {visibility: hidden;}
+#         footer {visibility: hidden;}
+#         header {visibility: hidden;}
+#         </style>
+#     """
+# st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
+USERNAME = 'vikash'
+PASSWORD = 'vikash'
 
 def main():
     if is_user_logged_in():
@@ -45,7 +57,7 @@ def render_login_form():
 def render_authorized_content():
     st.markdown("<h3 style='text-align: center;'>Manufacturer's Sales Dashboard</h3>", unsafe_allow_html=True)
 
-    chart_data = pd.read_csv(r"Sales.csv")
+    chart_data = pd.read_csv(r"C:\Users\VikashKumarChaudhary\Downloads\Sales.csv")
     
     with open("Filter.css")as f:
      st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html = True)

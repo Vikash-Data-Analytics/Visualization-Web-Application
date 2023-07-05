@@ -78,46 +78,46 @@ def render_authorized_content():
     # filtered_data = filtered_data[(filtered_data['Date'] >= start_date) & (filtered_data['Date'] <= end_date)]
     with col1:
        
-        st.subheader("Quaterly Sales")
+        st.markdown("Quaterly Sales")
         with st.expander("View"):
          st.markdown("<h6 style='text-align: center;'>Quaterly Sales</h6>", unsafe_allow_html=True)
 
          st.bar_chart(filtered_data, x = "QTR", y= "SALES")
         # st.metric(label ="Total Sales in selected Year", value = (filtered_data['SALES']).sum())
     with col1:
-        st.subheader("Monthly Sales")
+        st.markdown("Monthly Sales")
         with st.expander("View The Table"):
             st._arrow_line_chart(filtered_data, x = "MONTH", y =  "SALES")
 
     with col2:
         # st.metric(label ="Number of Items Sold", value = (filtered_data['QUANTITYORDERED']).sum())
-        selected_Year = st.selectbox("Select Year", chart_data['QTR'].unique())
+        selected_Year = st.selectbox("Select Quarter", chart_data['QTR'].unique())
 
         # filtered_data = filter_data(chart_data, selected_Year)
 
       
-        st.subheader("Status of Orders by Terriotory")
+        st.markdown("Status of Orders by Terriotory")
         
         with st.expander("View"):
             # st.metric(label ="Number of Items Sold", value = (filtered_data['QUANTITYORDERED']).sum())
             st.bar_chart(filtered_data, x='QUANTITYORDERED',y='MONTH')
         df1 = filtered_data.CUSTOMERNAME.value_counts()
-        st.subheader("Top Revenue Generator Customers")
+        st.markdown("Top Revenue Generator Customers")
         with st.expander("See The Chart"):
             st.table(df1.head(9))
     
     with col2:
-        st.subheader("Items sold per month")
+        st.markdown("Items sold per month")
         with st.expander("View the Table"):
             st.bar_chart(filtered_data, x = 'QUANTITYORDERED', y = 'MONTH')
-        st.subheader("Top States Contributing in sales ")
+        st.markdown("Top States Contributing in sales ")
         with st.expander("View"):
             st._arrow_line_chart(filtered_data, x = 'STATE', y = 'SALES')
     with col1:
-        st.subheader("Most Saled Items")
+        st.markdown("Most Saled Items")
         with st.expander("View"):
             st._arrow_bar_chart(filtered_data['PRODUCTLINE'].value_counts())
-        st.subheader("Sales by Territory")
+        st.markdown("Sales by Territory")
         with st.expander("View the chart"):
          st.bar_chart(filtered_data, x = 'TERRITORY', y = 'SALES')
         st.button("Log Out", on_click=logout)

@@ -20,7 +20,7 @@ with col1:
     st.image(logo_image, width=200)
 
 with col2:
-    st.subheader("VentureSathi_Insights - Driving Growth through Data Analytics")
+    st.subheader("VentureSathi Insights - Driving Growth through Data Analytics")
     # st.markdown("<h1 color: #000080;'>Stock Price Analysis</h1>", unsafe_allow_html=True)
 
 

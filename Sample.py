@@ -64,7 +64,7 @@ def render_authorized_content():
     st.markdown("<h1 style='text-align: center; color: #000080;'>ABC Enterprises Sales Dashboard</h1>", unsafe_allow_html=True)
 
     col1, col2, col3  = st.columns([5,5,5])
-    chart_data = pd.read_csv(r"C:\\Users\\VikashKumarChaudhary\Downloads\\US  E-commerce records 2020.csv",encoding= 'unicode_escape')
+    chart_data = pd.read_csv(r"US  E-commerce records 2020.csv",encoding= 'unicode_escape')
 
     with open("Vis.css")as f:
      st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html = True)

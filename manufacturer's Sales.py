@@ -115,7 +115,6 @@ def render_authorized_content():
             st.markdown("Least Contributing Cudtomers")
             st.write(df1.tail(1))
             
-st.map()
 
         
 def filter_data(chart_data, selected_Year):

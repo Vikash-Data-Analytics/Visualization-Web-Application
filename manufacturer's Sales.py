@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import yfinance as yf
 import plotly.express as px
 import datetime as time
 st.set_option('deprecation.showfileUploaderEncoding', False)
@@ -116,7 +115,7 @@ def render_authorized_content():
             st.markdown("Least Contributing Cudtomers")
             st.write(df1.tail(1))
             
-            st.map()
+st.map()
 
         
 def filter_data(chart_data, selected_Year):

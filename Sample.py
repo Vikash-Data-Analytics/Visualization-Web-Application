@@ -1,9 +1,7 @@
 import streamlit as st
-import streamlit as st
 import pandas as pd
 import numpy as np
 import datetime
-from streamlit_card import card
 st.set_page_config(
     page_title="Venturesathi | Analytical Solutions",
     page_icon="Logo.jpg",

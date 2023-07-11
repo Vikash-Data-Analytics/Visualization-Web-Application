@@ -34,7 +34,9 @@ USER_CREDENTIALS = {
 stocks = {
     'Reliance': 'RELIANCE.NS',
     'Zomato': 'ZOMATO.NS',
-    'Nifty': '^NSEI'
+    'Nifty': '^NSEI',
+    'NIFTY BANK':'^NSEBANK',
+    'BSE SENSEX':'^BSESN'
 }
 
 def main():

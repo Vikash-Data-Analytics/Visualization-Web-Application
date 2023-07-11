@@ -11,8 +11,8 @@ st.set_page_config(
     layout='wide',
 )
 
-with open("Filter.css") as f:
-    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+# with open("Filter.css") as f:
+#     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 logo_image = "Logo.png"
 
 col1, col2 = st.columns([1, 3])
@@ -71,7 +71,7 @@ def render_authorized_content():
     # st.markdown("<h1 style='text-align: center; color: #000080;'>Stock Price Analysis</h1>", unsafe_allow_html=True)
     selected_stock = st.sidebar.selectbox('Select a stock', list(stocks.keys()))
     stock_data = yf.download(tickers=stocks[selected_stock], period='1d', interval='1m')
-    st.write(stock_data.tail())
+    st.table(stock_data.tail())
     selected_graph = st.sidebar.multiselect("Select insights", ("map", "Open and Lowest Price", "Opening and Closing", "Summary", "Daily Lowest Price", "Lowest and Closing Price","Open, High, Low, and Close Price"))
 
 

@@ -11,8 +11,8 @@ st.set_page_config(
     layout='wide',
 )
 
-# with open("Filter.css") as f:
-#     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+with open("Filter.css") as f:
+    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 logo_image = "Logo.png"
 
 col1, col2 = st.columns([1, 3])

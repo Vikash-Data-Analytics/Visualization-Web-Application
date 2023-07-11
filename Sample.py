@@ -48,7 +48,6 @@ def render_login_form():
             st.experimental_rerun()  
         else:
             st.error("Invalid username or password")
-            st.image("images.jpg")
 
 def render_authorized_content():
     hide_streamlit_style = """

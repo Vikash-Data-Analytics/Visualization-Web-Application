@@ -35,8 +35,14 @@ stocks = {
     'Reliance': 'RELIANCE.NS',
     'Zomato': 'ZOMATO.NS',
     'Nifty': '^NSEI',
-    'NIFTY BANK':'^NSEBANK',
-    'BSE SENSEX':'^BSESN'
+    'BANK NIFTY':'^NSEBANK',
+    'SENSEX':'^BSESN',
+    'Tata Steel Limited': 'TATASTEEL.NS',
+    'Maithan Alloys Limited': 'MAITHANALL.NS',
+    'Tata Power Company Limited': 'TATAPOWER.NS',
+    'Adani Power Limited': 'ADANIPOWER.NS',
+    'One97 Communications(PAYTM)': 'PAYTM.NS',
+    'Steel Authority of India Limited': 'SAIL.NS'
 }
 
 def main():

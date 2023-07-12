@@ -112,7 +112,7 @@ st.sidebar.subheader("Visualization Tools")
 
 st.sidebar.markdown("- Microsoft Power BI")
 st.sidebar.markdown("- Tableau")
-st.sidebar.markdown("- Pentahao")
+st.sidebar.markdown("- Pentaho")
 st.sidebar.markdown("- Looker(Google Studio)")
 
 

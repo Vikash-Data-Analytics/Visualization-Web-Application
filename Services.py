@@ -24,10 +24,6 @@ from streamlit.components.v1 import html
 #     st.subheader("Sample Sales Dashboard")
 #     st.subheader("Manufacturer's Sales")
 
-''' 
-    1. Adding the Css file in this code to do the styling.
-    2. It will set the width and margin of the web page.
-'''
 with open("Services.css")as f:
      st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html = True)
 
@@ -64,7 +60,7 @@ with col1:
     st.markdown("- Data Visualization")
 
 # st.markdown("<h4 style = 'text-align: center;'>Microsoft Power BI Dashboards Samples:</h4>", unsafe_allow_html=True)
-st.markdown("<h4>Microsoft Power BI Dashboards Samples:</h4>", unsafe_allow_html=True)
+# st.markdown("<h4>Microsoft Power BI Dashboards Samples:</h4>", unsafe_allow_html=True)
 
 
 

@@ -104,9 +104,9 @@ st.markdown('''
 st.sidebar.subheader("Our In-House Developed Products")
 
 st.sidebar.button('Live Stock Price Analysis', on_click=open_page, args=('https://stock-analysis-uf1g.onrender.com',))
-st.sidebar.button('Sales Dashboard', on_click=open_page, args=('https://venturesathi-visualization-app.onrender.com',))
 st.sidebar.button('Stock Price Prediction', on_click=open_page, args=('https://venturesathi-data-analytics.onrender.com/',))
 st.sidebar.button('Manufacturer Sales', on_click=open_page, args=('https://venturesathi-manufacturer-sales.onrender.com',))
+st.sidebar.button('Sales Dashboard', on_click=open_page, args=('https://venturesathi-visualization-app.onrender.com',))
 
 st.sidebar.subheader("Visualization Tools")
 

@@ -13,8 +13,26 @@
 
 #Importing the required Libraries.
 
+
 import streamlit as st
 from streamlit.components.v1 import html
+
+st.set_page_config(
+    page_title="Venturesathi | Data Analytics Products",
+    page_icon="Logo.jpg",
+    # layout = 'wide',
+)
+
+hide_streamlit_style = """
+    <style>
+        #MainMenu {visibility: hidden;}
+        footer {visibility: hidden;}
+        header {visibility: hidden;}
+        </style>
+    """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
+
 
 
 # col1, col2 = st.columns([3,3])

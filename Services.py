@@ -28,6 +28,7 @@ streamlit_style = """
 
 			html, body, [class*="css"]  {
 			font-family:serif;
+   			font-size: 16px;
 			}
 			</style>
 			"""

@@ -90,7 +90,7 @@ def render_authorized_content():
             st._arrow_bar_chart(filtered_data['PRODUCTLINE'].value_counts())
             st.markdown("Sales by Territory")
             st.bar_chart(filtered_data, x = 'TERRITORY', y = 'SALES', width=300, height=300)
-            st.button("Log Out", on_click=logout)
+        st.button("Log Out", on_click=logout)
 
 
     with col2:

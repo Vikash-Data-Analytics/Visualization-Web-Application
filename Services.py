@@ -26,14 +26,12 @@ streamlit_style = """
 			<style>
 			@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
-			P, [class*="css"]  {
-			font-family:serif;
-   			font-size: 16px;
+			html, body, [class*="css"]  {
+			font-family: 'Roboto', sans-serif;
 			}
 			</style>
 			"""
 st.markdown(streamlit_style, unsafe_allow_html=True)
-
 hide_streamlit_style = """
     <style>
         #MainMenu {visibility: hidden;}

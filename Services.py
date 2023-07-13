@@ -134,7 +134,7 @@ if selection == "Tableau":
 if selection == "Looker(Google Studio)":
     st.markdown("<h4>Google Looker Dashboards Sample:</h4>", unsafe_allow_html=True)
     st.image("sample_b.png")
-    st.image("sample_f.png")
+    st.image("sample_f.png", width = 1040)
 
 
 

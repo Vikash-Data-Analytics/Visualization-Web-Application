@@ -13,12 +13,11 @@
 
 #Importing the required Libraries.
 
-
 import streamlit as st
 from streamlit.components.v1 import html
 
 st.set_page_config(
-    page_title="Venturesathi | Data Analytics Products",
+    page_title="Venturesathi Business Services LLP",
     page_icon="Logo.jpg",
     # layout = 'wide',
 )
@@ -31,6 +30,7 @@ hide_streamlit_style = """
         </style>
     """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
 
 
 
@@ -59,7 +59,7 @@ st.image("Logo.png",width=150)
 # st.subheader("Venturesathi Business Services LLP")
 st.markdown("<h2 style='text-align: center; color: #2c698d;'>Venturesathi Business Services LLP</h2>", unsafe_allow_html=True)
 
-st.markdown("With a dream of creating revolution in Data Analytics and Management Reporting for small and mid-sized companies, we started our organization Venturesathi Business Services LLP in the year 2022. So far, we have two world class service delivery centres in Rourkela, Odisha, India, where we have more than 100 plus members working in different shifts. We strive to innovate and automate every processes which comes to our way. For that reason we have entered into multiple partnerships with technology providers and industry leaders.")
+st.markdown("At Venturesathi, we are more than just a data analytics company – we are a dynamic force revolutionizing the way businesses harness the power of data. We specialize in delivering state-of-the-art data analytics solutions that drive performance and profitability for our esteemed clients. With a proven track record of success, we have honed our expertise in providing data-driven solutions across diverse industries. Our team of seasoned professionals possesses deep industry knowledge and technical proficiency, enabling us to tailor our services to meet your unique business needs. Our commitment to quality is unwavering. As an ISO 9001:2015 certified organization, we adhere to stringent standards, ensuring that every aspect of our service, solutions, and results meets the highest level of excellence. Partner with us to unlock the full potential of your data and gain a competitive edge in today's data-centric world. Experience a Showcase of Our Data Analytics & visualization Capabilities Here!")
 
 st.title(" ")
 
@@ -78,7 +78,7 @@ with col1:
     st.markdown("- Data Visualization")
 
 # st.markdown("<h4 style = 'text-align: center;'>Microsoft Power BI Dashboards Samples:</h4>", unsafe_allow_html=True)
-# st.markdown("<h4>Microsoft Power BI Dashboards Samples:</h4>", unsafe_allow_html=True)
+
 
 
 
@@ -88,7 +88,7 @@ with col2:
     
     st.markdown("- Time - Series Forecasting")
     st.markdown("- AI Enabled Analytical Solutions")
-    st.markdown("- Solutions Using Powerful Models Like Desicion Tree, Random Forest, Linear Regression, Logistic Regression, Long-short Memory(LSTM).")
+    st.markdown("- Solutions Using Powerful Models Like Desicion Tree, Random Forest, Linear Regression, Logistic Regression, Long-short Term Memory(LSTM).")
 
 
 st.markdown('''
@@ -104,16 +104,34 @@ st.markdown('''
 st.sidebar.subheader("Our In-House Developed Products")
 
 st.sidebar.button('Live Stock Price Analysis', on_click=open_page, args=('https://stock-analysis-uf1g.onrender.com',))
+st.sidebar.button('Sample Sales Dashboard', on_click=open_page, args=('https://venturesathi-visualization-app.onrender.com',))
 st.sidebar.button('Stock Price Prediction', on_click=open_page, args=('https://venturesathi-data-analytics.onrender.com/',))
 st.sidebar.button('Manufacturer Sales', on_click=open_page, args=('https://venturesathi-manufacturer-sales.onrender.com',))
-st.sidebar.button('Sales Dashboard', on_click=open_page, args=('https://venturesathi-visualization-app.onrender.com',))
 
 st.sidebar.subheader("Visualization Tools")
 
-st.sidebar.markdown("- Microsoft Power BI")
-st.sidebar.markdown("- Tableau")
-st.sidebar.markdown("- Pentaho")
-st.sidebar.markdown("- Looker(Google Studio)")
+selection = st.sidebar.selectbox("Select the Tool to View the Sample",("Microsoft power BI", "Tableau", "Looker(Google Studio)"))
+
+if selection == "Microsoft power BI":
+    st.markdown("<h4>Microsoft Power BI Dashboards Sample:</h4>", unsafe_allow_html=True)
+    st.image("sample_a.png")
+    st.image("sample_d.png")
+
+if selection == "Tableau":
+    st.markdown("<h4>Tableau Dashboards Sample:</h4>", unsafe_allow_html=True)
+    st.image("sample_c.png")
+
+if selection == "Looker(Google Studio)":
+    st.markdown("<h4>Google Looker Dashboards Sample:</h4>", unsafe_allow_html=True)
+    st.image("sample_b.png")
+
+
+
+
+# st.sidebar.markdown("- Microsoft Power BI")
+# st.sidebar.markdown("- Tableau")
+# st.sidebar.markdown("- Pentaho")
+# st.sidebar.markdown("- Looker(Google Studio)")
 
 
 st.sidebar.subheader("Accepted Data Sources")

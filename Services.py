@@ -114,10 +114,10 @@ st.markdown('''
 st.sidebar.subheader("Our In-House Developed Products")
 
 st.sidebar.button('Live Stock Price Analysis', on_click=open_page, args=('https://stock-analysis-uf1g.onrender.com',))
-st.sidebar.button('Sample Sales Dashboard', on_click=open_page, args=('https://venturesathi-visualization-app.onrender.com',))
+st.sidebar.button('Sales Dashboard', on_click=open_page, args=('https://venturesathi-visualization-app.onrender.com',))
 st.sidebar.button('Stock Price Prediction', on_click=open_page, args=('https://venturesathi-data-analytics.onrender.com/',))
 st.sidebar.button('Manufacturer Sales', on_click=open_page, args=('https://venturesathi-manufacturer-sales.onrender.com',))
-
+st.title("")
 st.sidebar.subheader("Visualization Tools")
 
 selection = st.sidebar.selectbox("Select the Tool to View the Sample",("Microsoft power BI", "Tableau", "Looker(Google Studio)"))
@@ -145,9 +145,9 @@ if selection == "Looker(Google Studio)":
 # st.sidebar.markdown("- Looker(Google Studio)")
 
 
-st.sidebar.subheader("Accepted Data Sources")
+# st.sidebar.subheader("Accepted Data Sources")
 
-st.sidebar.markdown("- Excel, Google Sheets")
-st.sidebar.markdown("- Database(MySQL)")
-st.sidebar.markdown("- Any other Known Sources Of Data")
-# st.sidebar.markdown("- <h4></h4>", unsafe_allow_html=True)
+# st.sidebar.markdown("- Excel, Google Sheets")
+# st.sidebar.markdown("- Database(MySQL)")
+# st.sidebar.markdown("- Any other Known Sources Of Data")
+# # st.sidebar.markdown("- <h4></h4>", unsafe_allow_html=True)

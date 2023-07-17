@@ -113,10 +113,10 @@ st.markdown('''
 
 st.sidebar.subheader("Our In-House Developed Products")
 
-st.sidebar.button('Live Stock Price Analysis', on_click=open_page, args=('https://stock-analysis-uf1g.onrender.com',))
-st.sidebar.button('Sales Dashboard', on_click=open_page, args=('https://venturesathi-visualization-app.onrender.com',))
-st.sidebar.button('Stock Price Prediction', on_click=open_page, args=('https://venturesathi-data-analytics.onrender.com/',))
-st.sidebar.button('Manufacturer Sales', on_click=open_page, args=('https://venturesathi-manufacturer-sales.onrender.com',))
+st.sidebar.button('Live Stock Price Analysis', on_click=open_page, args=('https://stock-price-analysis.onrender.com',))
+st.sidebar.button('Sales Dashboard', on_click=open_page, args=('https://venturesathi-visualization-web.onrender.com',))
+st.sidebar.button('Stock Price Prediction', on_click=open_page, args=('https://venturesathi-stock-price-prediction.onrender.com',))
+st.sidebar.button('Manufacturer Sales', on_click=open_page, args=('https://venturesathi-manufacturer-sales-dashboard.onrender.com',))
 st.title("")
 st.sidebar.subheader("Visualization Tools")
 
